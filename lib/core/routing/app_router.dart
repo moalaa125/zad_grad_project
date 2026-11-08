@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:zad_grad_project/core/routing/routes.dart';
+import 'package:zad_grad_project/features/auth/welcome_screen.dart';
 import 'package:zad_grad_project/features/onboarding/ui/onboarding_screen.dart';
 
 class AppRouter {
@@ -9,12 +10,13 @@ class AppRouter {
 
     switch (settings.name) {
       case Routes.onBoardingScreen:
-        return MaterialPageRoute(
-          builder: (context) =>  OnboardingScreen(),
-        );
+        return MaterialPageRoute(builder: (context) => OnboardingScreen());
 
-      case Routes.loginScreen:
-        return MaterialPageRoute(builder: (context) => const Scaffold());
+      case Routes.welcomeScreen:
+        return MaterialPageRoute(builder: (context) => WelcomeScreen());
+
+      // case Routes.loginScreen:
+      //   return MaterialPageRoute(builder: (context) => const Scaffold());
 
       default:
         return MaterialPageRoute(
@@ -22,7 +24,7 @@ class AppRouter {
             body: Center(
               child: Text(
                 'No route defined for this ${settings.name}',
-                style: TextStyle(fontSize: 24, color: Colors.white),
+                style: TextStyle(fontSize: 24, color: Colors.black),
               ),
             ),
           ),

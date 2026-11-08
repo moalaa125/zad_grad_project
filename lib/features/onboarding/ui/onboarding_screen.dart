@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:zad_grad_project/core/routing/routes.dart';
 import 'package:zad_grad_project/core/theming/app_colors.dart';
 import 'package:zad_grad_project/core/theming/styles.dart';
 import 'package:zad_grad_project/features/onboarding/ui/onboarding_page.dart';
@@ -32,9 +33,12 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   }
 
   void _finish() {
-
-    // mafrod tb2a route ll  (AUTH SCREEN) 3shan lma y5ls el onboarding yro7 ll auth screen
-  }
+  Navigator.pushNamedAndRemoveUntil(
+    context,
+    Routes.welcomeScreen,
+    (route) => false,
+  );
+}
 
   @override
   void dispose() {
