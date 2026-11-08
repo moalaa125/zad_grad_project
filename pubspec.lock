@@ -235,6 +235,7 @@ packages:
       url: "https://pub.dev"
     source: hosted
 <<<<<<< HEAD
+<<<<<<< HEAD
     version: "1.18.0"
   objective_c:
     dependency: transitive
@@ -255,6 +256,9 @@ packages:
 =======
     version: "1.19.0"
 >>>>>>> 3e53a97237d9365abc09e551193f90d38f78792b
+=======
+    version: "1.19.0"
+>>>>>>> 07f5718e21634d21cb263ae2fd606e06440d7eb2
   path:
     dependency: transitive
     description:
@@ -396,6 +400,7 @@ packages:
       url: "https://pub.dev"
     source: hosted
 <<<<<<< HEAD
+<<<<<<< HEAD
     version: "0.7.11"
   typed_data:
     dependency: transitive
@@ -408,6 +413,9 @@ packages:
 =======
     version: "0.7.12"
 >>>>>>> 3e53a97237d9365abc09e551193f90d38f78792b
+=======
+    version: "0.7.12"
+>>>>>>> 07f5718e21634d21cb263ae2fd606e06440d7eb2
   vector_math:
     dependency: transitive
     description:
